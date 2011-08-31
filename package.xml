@@ -1,0 +1,30 @@
+<package>
+  <name>SystemEvents</name>
+  <namespace>Smalltalk</namespace>
+  <prereq>Announcements</prereq>
+
+  <test>
+    <sunit>ClassAddedTest</sunit>
+    <sunit>ClassDefinitionChangedTest</sunit>
+    <sunit>ClassRecategorizedTest</sunit>
+    <sunit>MethodAddedTest</sunit>
+    <sunit>MethodRemovedTest</sunit>
+    <filein>Tests/ClassAddedTest.st</filein>
+    <filein>Tests/ClassDefinitionChangedTest.st</filein>
+    <filein>Tests/ClassRecategorizedTest.st</filein>
+    <filein>Tests/MethodAddedTest.st</filein>
+    <filein>Tests/MethodRemovedTest.st</filein>
+  </test>
+
+  <filein>Wrapper/BlockWrapper.st</filein>
+  <filein>Announcement/SystemAnnouncer.st</filein>
+  <filein>Announcement/SystemAnnouncement.st</filein>
+  <filein>Events/NamespaceAddedEvent.st</filein>
+  <filein>Events/NamespaceRemovedEvent.st</filein>
+  <filein>Events/ClassAddedEvent.st</filein>
+  <filein>Events/ClassDefinitionChangedEvent.st</filein>
+  <filein>Events/ClassRecategorizedEvent.st</filein>
+  <filein>Events/MethodAddedEvent.st</filein>
+  <filein>Events/MethodRemovedEvent.st</filein>
+  <filein>Installation/Installer.st</filein>
+</package>
