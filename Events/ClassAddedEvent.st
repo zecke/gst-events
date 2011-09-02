@@ -23,5 +23,11 @@ SystemAnnouncement subclass: ClassAddedEvent [
 
                 class := aClass
         ]
+
+	item [
+		<category: 'accessing'>
+
+		^ self addedClass
+	]
 ]
 

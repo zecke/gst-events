@@ -23,5 +23,11 @@ SystemAnnouncement subclass: NamespaceAddedEvent [
 
                 namespace := aNamespace
         ]
+
+        item [
+                <category: 'accessing'>
+
+                ^ self addedNamespace
+        ]
 ]
 

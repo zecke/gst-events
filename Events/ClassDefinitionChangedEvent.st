@@ -36,5 +36,23 @@ SystemAnnouncement subclass: ClassDefinitionChangedEvent [
 
                 class := aClass
         ]
+
+        item [
+                <category: 'accessing'>
+
+                ^ self updatedClass
+        ]
+
+        oldItem [
+                <category: 'accessing'>
+
+                ^ self oldClass
+        ]
+
+	isSuperclassModified [
+		<category: 'testing'>
+
+		^ self oldClass superclass ~~ self updatedClass superclass
+	]
 ]
 

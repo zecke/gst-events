@@ -18,6 +18,7 @@ TestCase subclass: ClassRecategorizedTest [
                                 self changedClass: ann ].
 		Foo123 category: 'bla'.
                 self assert: announcement updatedClass = Foo123.
+                self assert: announcement updatedClass = announcement item.
                 self assert: announcement category = 'bla'.
                 self assert: announcement oldCategory isNil 
         ]

@@ -15,8 +15,9 @@ TestCase subclass: ClassAddedTest [
 
 		SystemAnnouncer current on: ClassAddedEvent do: [ :ann | 
 				self addedClass: ann ].
-		Object subclass: #Foo.
-		self assert: announcement addedClass = Foo
+		Object subclass: #Foo234.
+		self assert: announcement addedClass == announcement item.
+		self assert: announcement addedClass == Foo234
 	]
 ]
 

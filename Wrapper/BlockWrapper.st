@@ -54,5 +54,11 @@ CompiledMethod subclass: BlockWrapper [
 
                 ^ block value: anObject value: anArray value: method
         ]
+
+	methodRecompilationSourceString [
+		<category: 'source code'>
+
+		^ method methodRecompilationSourceString
+	]
 ]
 

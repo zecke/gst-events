@@ -23,5 +23,11 @@ SystemAnnouncement subclass: NamespaceRemovedEvent [
 
                 namespace := aNamespace
         ]
+
+        item [
+                <category: 'accessing'>
+
+                ^ self removedNamespace
+        ]
 ]
 

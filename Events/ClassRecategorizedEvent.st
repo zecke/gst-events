@@ -49,5 +49,11 @@ SystemAnnouncement subclass: ClassRecategorizedEvent [
 
                 class := aClass
         ]
+
+	item [
+		<category: 'accessing'>
+
+		^ self updatedClass
+	]
 ]
 

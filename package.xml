@@ -4,11 +4,15 @@
   <prereq>Announcements</prereq>
 
   <test>
+    <sunit>NamespaceAddedTest</sunit>
+    <sunit>NamespaceRemovedTest</sunit>
     <sunit>ClassAddedTest</sunit>
     <sunit>ClassDefinitionChangedTest</sunit>
     <sunit>ClassRecategorizedTest</sunit>
     <sunit>MethodAddedTest</sunit>
     <sunit>MethodRemovedTest</sunit>
+    <filein>Tests/NamespaceAddedTest.st</filein>
+    <filein>Tests/NamespaceRemovedTest.st</filein>
     <filein>Tests/ClassAddedTest.st</filein>
     <filein>Tests/ClassDefinitionChangedTest.st</filein>
     <filein>Tests/ClassRecategorizedTest.st</filein>

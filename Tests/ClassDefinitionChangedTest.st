@@ -19,7 +19,9 @@ TestCase subclass: ClassDefinitionChangedTest [
 
 		Foo123 superclass: nil.
                 self assert: announcement oldClass name = #Foo123.
+                self assert: announcement oldClass = announcement oldItem.
                 self assert: announcement updatedClass = Foo123.
+                self assert: announcement updatedClass = announcement item.
                 self assert: announcement updatedClass superclass isNil.
 
 		Foo123 addInstVarName: 'a'.
