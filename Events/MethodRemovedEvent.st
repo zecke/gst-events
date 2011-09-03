@@ -23,4 +23,10 @@ SystemAnnouncement subclass: MethodRemovedEvent [
 
                 method := aCompiledMethod
         ]
+
+        item [
+                <category: 'accessing'>
+
+                ^ self method
+        ]
 ]

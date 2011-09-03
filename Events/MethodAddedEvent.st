@@ -23,4 +23,10 @@ SystemAnnouncement subclass: MethodAddedEvent [
 
                 method := aCompiledMethod
         ]
+
+	item [
+		<category: 'accessing'>
+
+		^ self method
+	]
 ]

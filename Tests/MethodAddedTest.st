@@ -17,7 +17,8 @@ TestCase subclass: MethodAddedTest [
 		SystemAnnouncer current on: MethodAddedEvent do: [ :ann | 
 				self addedMethod: ann ].
 		Foo123 compile: 'foo []'.
-		self assert: announcement method = (Foo123 >> #foo)
+		self assert: announcement method = (Foo123 >> #foo).
+		self assert: announcement method = announcement item
 	]
 ]
 

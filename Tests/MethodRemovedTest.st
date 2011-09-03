@@ -19,7 +19,8 @@ TestCase subclass: MethodRemovedTest [
 				self removedMethod: ann ].
 		Foo123 compile: 'foo []'.
 		mth := Foo123 removeSelector: #foo.
-		self assert: announcement method = mth
+		self assert: announcement method = mth.
+		self assert: announcement method = announcement item
 	]
 ]
 
