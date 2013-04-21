@@ -53,7 +53,6 @@ Metaclass extend [
             setInstanceSpec: shape instVars: arrayOfInstVarNames size;
             setClassVariables: classVarDict;
             setSharedPools: sharedPoolNames;
-            makeUntrusted: theSuperclass isUntrusted;
             setCategory: categoryName.
         aNamespace at: className put: aClass.
         theSuperclass isNil ifFalse: [theSuperclass addSubclass: aClass].
